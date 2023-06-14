@@ -14,7 +14,7 @@ class ThinkFramework extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        if ('yzncms/framework' !== $package->getPrettyName()) {
+        if ('mnytool/framework' !== $package->getPrettyName()) {
             throw new InvalidArgumentException('Unable to install this library!');
         }
 
@@ -61,6 +61,6 @@ class ThinkFramework extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return 'yzncms-framework' === $packageType;
+        return 'mnytool-framework' === $packageType;
     }
 }
